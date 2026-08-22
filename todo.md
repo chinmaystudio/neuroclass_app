@@ -11,4 +11,4 @@
 - [x] Prepare the full source for chinmaystudio/neuroclass_app.
 - [ ] Push the full source to chinmaystudio/neuroclass_app after GitHub authorization is available.
 - [x] Align restored native modules with Expo SDK 54 to prevent the camera permission-hook preview crash.
-- [ ] Push the validated project to chinmaystudio/neuroclass_app and verify the remote commit.
+- [x] Push the validated project to chinmaystudio/neuroclass_app and verify the remote commit.
