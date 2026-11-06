@@ -62,6 +62,12 @@ export default function AssignmentsScreen() {
               : "These are your classroom's published assignments from the shared NeuroClass database."
           }
         />
+        {role === "teacher" ? (
+          <PrimaryButton
+            label="New assignment"
+            onPress={() => router.push({ pathname: "/assignment-create/[classroomId]", params: { classroomId } } as never)}
+          />
+        ) : null}
         {error ? (
           <EmptyState title="Assignments unavailable" detail={error} action={<PrimaryButton label="Try again" onPress={() => void load()} />} />
         ) : assignments.length === 0 ? (
@@ -69,7 +75,7 @@ export default function AssignmentsScreen() {
             title="No assignments yet"
             detail={
               role === "teacher"
-                ? "Assignments you create on the NeuroClass web app will appear here automatically."
+                ? "Create the first one here — it will appear in the web app too, from the same shared database."
                 : "Your teacher has not published an assignment for this class yet."
             }
           />

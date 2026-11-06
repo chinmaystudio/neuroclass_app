@@ -128,7 +128,10 @@ export default function AssignmentDetailScreen() {
 
         {role === "teacher" ? (
           <>
-            <Text style={[styles.sectionTitle, { color: colors.foreground }]}>Submissions · {entries.length} students</Text>
+            <View style={styles.row}>
+              <Text style={[styles.sectionTitle, { color: colors.foreground, flex: 1 }]}>Submissions · {entries.length} students</Text>
+              <OutlineButton label="Grade submissions" onPress={() => router.push({ pathname: "/assignment-grade/[id]", params: { id: assignment.id } } as never)} />
+            </View>
             {entries.length === 0 ? (
               <EmptyState title="No roster yet" detail="Students who join this classroom will be listed here with their submission status." />
             ) : (
