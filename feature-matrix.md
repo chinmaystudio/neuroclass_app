@@ -20,3 +20,6 @@ The mobile client reuses the existing Supabase Auth account, `users`, `classroom
 
 The native client sends face samples and attendance frames only to the existing authenticated backend gateway. It does not generate embeddings, expose biometric vectors, call the Render AI services directly, embed service-role credentials, or claim browser-only focus/tab monitoring. Native test authoring remains available through the secured existing test portal rather than a duplicate mobile implementation.
 
+
+| Assignments | Web `/api/v1` assignments (assignments, assignment_submissions, assignment_attachments, assignment_submission_files) | Native assignments list per classroom, assignment detail, student text draft save + submit, teacher submission roster — all through the same `/api/v1` backend and shared tables | Implemented in this build; file upload and coding workspace remain web-handled and are labelled as such in the app |
+| Web-identical interface | Web design tokens in `frontend/index.css` (`--nc-*`) | Mobile `theme.config.js` now uses the exact web token values for primary, canvas, surface, ink, muted, border, success, warning and danger in light and dark mode | Implemented in this build |

@@ -12,3 +12,7 @@
 - [ ] Push the full source to chinmaystudio/neuroclass_app after GitHub authorization is available.
 - [x] Align restored native modules with Expo SDK 54 to prevent the camera permission-hook preview crash.
 - [x] Push the validated project to chinmaystudio/neuroclass_app and verify the remote commit.
+
+- [x] Align the mobile theme 1:1 with the web design tokens (`frontend/index.css` --nc-*).
+- [x] Add native Assignments (list, detail, student draft/submit, teacher roster) on the shared /api/v1 backend.
+- [ ] Push this build to chinmaystudio/neuroclass_app.

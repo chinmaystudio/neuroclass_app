@@ -35,13 +35,13 @@ NeuroClass Mobile is a portrait-first academic companion for the existing NeuroC
 
 | Token | Light | Dark | Purpose |
 |---|---:|---:|---|
-| NeuroClass indigo | `#3949AB` | `#A5B4FC` | Navigation, primary actions, and brand identity. |
-| Porcelain background | `#F8F9FC` | `#101322` | Quiet reading canvas. |
-| Surface white | `#FFFFFF` | `#1A1E31` | Cards, sheets, and grouped content. |
-| Ink navy | `#18213A` | `#F1F5FF` | Primary text and controls. |
-| Muted slate | `#667085` | `#A8B1CB` | Supporting labels and metadata. |
-| Success mint | `#0F9D7A` | `#5DE0B4` | Submitted, present, and healthy states. |
-| Attention coral | `#E76F51` | `#FFAA95` | Time-sensitive and corrective actions. |
+| NeuroClass blue (web `--nc-primary`) | `#1a73e8` | `#8ab4f8` | Navigation, primary actions, and brand identity — identical to the web app. |
+| Canvas background (web `--nc-canvas`) | `#f8fafd` | `#121314` | Quiet reading canvas — identical to the web app. |
+| Surface white (web `--nc-surface`) | `#FFFFFF` | `#1e1f22` | Cards, sheets, and grouped content. |
+| Ink (web `--nc-ink`) | `#202124` | `#e8eaed` | Primary text and controls. |
+| Muted (web `--nc-ink-2`) | `#5f6368` | `#bdc1c6` | Supporting labels and metadata. |
+| Success (web `--nc-success`) | `#188038` | `#81c995` | Submitted, present, and healthy states. |
+| Danger (web `--nc-danger`) | `#d93025` | `#f28b82` | Time-sensitive and corrective actions. |
 
 ## Layout and Data Boundaries
 

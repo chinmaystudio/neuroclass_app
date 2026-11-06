@@ -118,3 +118,36 @@ export type StudentPerformance = {
   completedSubmissions: AssessmentSubmission[];
 };
 
+
+export type Assignment = {
+  id: string;
+  classroomId: string;
+  title: string;
+  description: string | null;
+  instructions: string | null;
+  assignmentType: "text" | "file" | "document" | "coding" | "mixed" | string;
+  status: string;
+  availableFrom: string | null;
+  dueAt: string | null;
+  totalMarks: number;
+  allowResubmission: boolean;
+  // Present on the student list response from /api/v1
+  myStatus?: string | null;
+  mySubmission?: { status: string; submittedAt: string | null; isLate: boolean; finalScore: number | null } | null;
+  // Present on the teacher list response from /api/v1
+  stats?: { enrolled: number; submitted: number; late: number; evaluated: number; pending: number } | null;
+};
+
+export type AssignmentSubmission = {
+  id: string;
+  status: string;
+  textResponse: string | null;
+  code: { language: string; source: string } | null;
+  submittedAt: string | null;
+  isLate: boolean;
+  revision: number;
+  updatedAt: string;
+  files: { id: string; name: string; mime: string; size: number; createdAt: string }[];
+  finalScore?: number | null;
+  feedback?: string | null;
+};

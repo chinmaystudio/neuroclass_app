@@ -1,7 +1,7 @@
 import { neuroClassApiBaseUrl, supabase } from "@/lib/supabase";
 
 type RequestOptions = {
-  method?: "GET" | "POST" | "PATCH";
+  method?: "GET" | "POST" | "PATCH" | "PUT" | "DELETE";
   body?: Record<string, unknown>;
   idempotencyKey?: string;
 };
