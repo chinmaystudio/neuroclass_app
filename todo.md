@@ -15,4 +15,4 @@
 
 - [x] Align the mobile theme 1:1 with the web design tokens (`frontend/index.css` --nc-*).
 - [x] Add native Assignments (list, detail, student draft/submit, teacher roster) on the shared /api/v1 backend.
-- [ ] Push this build to chinmaystudio/neuroclass_app.
+- [x] Push this build to chinmaystudio/neuroclass_app (commit 0a505f9, 2026-11-06).
