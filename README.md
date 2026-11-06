@@ -28,3 +28,24 @@ npx expo start
 
 Sign in with your NeuroClass web account — your classrooms, tests,
 attendance, materials, and assignments are already there.
+
+## Install on your phone (Android APK)
+
+Build a standalone APK with EAS (free Expo account) and install it directly:
+
+```bash
+npm install -g eas-cli
+eas login
+pnpm install
+eas build -p android --profile preview
+```
+
+The first build asks to create/link an EAS project for the app — accept.
+When the cloud build finishes, EAS shows a download link and QR code: open
+it on your phone, download the APK, and install it (allow "install from
+browser" when Android asks). The `preview` profile in `eas.json` is what
+produces the installable APK; `production` produces an app bundle for the
+Play Store.
+
+For quick testing without a build, run `npx expo start` and open the app
+in Expo Go (same Wi-Fi, scan the QR code).
